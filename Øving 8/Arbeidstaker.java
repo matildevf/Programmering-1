@@ -96,7 +96,6 @@ class ArbTaker{
         return (Year.now().getValue()-ansettelsesar)>ar;
     }
 
-    //@Override?
     public String toString() {
         return "Navn: " + navn() + "\nAlder: " + alder() + "\nAntall år ansatt i bedriften: " + arAnsatt() +
                 "\nSkatt per måned: " + skattManed() + " kr \nBruttolønn per år: " + bruttolonn() +
