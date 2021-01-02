@@ -3,16 +3,14 @@ import java.util.Scanner;
 class AntallSekunder{
     public static void main (String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Timer");
-        double timer = in.nextDouble();
+        System.out.print("Timer: ");
+        int t = in.nextInt();
+        System.out.print("Minutter: ");
+        int min = in.nextInt();
+        System.out.print("Sekunder: ");
+        int sek = in.nextInt();
 
-        System.out.println("Minutter");
-        double minutter = in.nextDouble();
-
-        System.out.println("Sekunder");
-        double sekunder = in.nextDouble();
-
-        double totalt = (timer*3600)+(minutter*60)+sekunder;
-        System.out.printf("Totalt antall sekunder er " + totalt + "\n");
+        int total = (t*3600) + (min*60) + sek;
+        System.out.println("Totalt antall sekunder er " + total);
     }
 }
